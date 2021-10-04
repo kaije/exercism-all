@@ -4,15 +4,15 @@ class Lasagna
         return 40;
     }
 
-    public int RemainingMinutesInOven(int ActualMinutesInOven) {
-        return this.ExpectedMinutesInOven() - ActualMinutesInOven;
+    public int RemainingMinutesInOven(int actualMinutesInOven) {
+        return this.ExpectedMinutesInOven() - actualMinutesInOven;
     }
 
-    public int PreparationTimeInMinutes(int NumLayers) {
-        return 2 * NumLayers;
+    public int PreparationTimeInMinutes(int numLayers) {
+        return 2 * numLayers;
     }
 
-    public int ElapsedTimeInMinutes(int NumLayers, int ActualMinutesInOven) {
-        return PreparationTimeInMinutes(NumLayers) + ActualMinutesInOven;
+    public int ElapsedTimeInMinutes(int numLayers, int actualMinutesInOven) {
+        return PreparationTimeInMinutes(numLayers) + actualMinutesInOven;
     }
 }
