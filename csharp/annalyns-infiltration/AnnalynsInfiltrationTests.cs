@@ -137,7 +137,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_everyone_is_awake_and_pet_dog_is_present()
     {
@@ -148,7 +148,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_everyone_is_awake_and_pet_dog_is_absent()
     {
@@ -159,7 +159,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Can_free_prisoner_if_everyone_is_asleep_and_pet_dog_is_present()
     {
@@ -170,7 +170,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_everyone_is_asleep_and_pet_dog_is_absent()
     {
@@ -181,7 +181,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_present()
     {
@@ -192,7 +192,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_absent()
     {
@@ -203,7 +203,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_archer_is_awake_and_pet_dog_is_present()
     {
@@ -214,7 +214,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_archer_is_awake_and_pet_dog_is_absent()
     {
@@ -225,7 +225,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Can_free_prisoner_if_only_knight_is_awake_and_pet_dog_is_present()
     {
@@ -236,7 +236,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_knight_is_awake_and_pet_dog_is_absent()
     {
@@ -247,7 +247,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_knight_is_asleep_and_pet_dog_is_present()
     {
@@ -258,7 +258,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_knight_is_asleep_and_pet_dog_is_absent()
     {
@@ -269,7 +269,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Can_free_prisoner_if_only_archer_is_asleep_and_pet_dog_is_present()
     {
@@ -280,7 +280,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_archer_is_asleep_and_pet_dog_is_absent()
     {
@@ -291,7 +291,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_present()
     {
@@ -302,7 +302,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(4)]
     public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_absent()
     {
