@@ -101,7 +101,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Can_signal_prisoner_if_archer_is_sleeping_and_prisoner_is_awake()
     {
@@ -110,7 +110,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Cannot_signal_prisoner_if_archer_is_awake_and_prisoner_is_sleeping()
     {
@@ -119,7 +119,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_sleeping()
     {
@@ -128,7 +128,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_awake()
     {
