@@ -19,7 +19,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanFastAttack(knightIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Cannot_spy_if_everyone_is_sleeping()
     {
@@ -29,7 +29,7 @@ public class QuestLogicTests
         Assert.False(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_everyone_but_knight_is_sleeping()
     {
@@ -39,7 +39,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_everyone_but_archer_is_sleeping()
     {
@@ -49,7 +49,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_everyone_but_prisoner_is_sleeping()
     {
@@ -61,7 +61,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_only_knight_is_sleeping()
     {
@@ -71,7 +71,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_only_archer_is_sleeping()
     {
@@ -81,7 +81,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_only_prisoner_is_sleeping()
     {
@@ -91,7 +91,7 @@ public class QuestLogicTests
         Assert.True(QuestLogic.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Can_spy_if_everyone_is_awake()
     {
