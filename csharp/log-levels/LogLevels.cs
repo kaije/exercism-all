@@ -2,7 +2,7 @@ using System;
 
 static class LogLine
 {
-    public static string Message(string logLine) => logLine.Remove(0,9);
+    public static string Message(string logLine) => logLine.Substring(logLine.IndexOf(']') + 3);
 
     public static string LogLevel(string logLine)
     {

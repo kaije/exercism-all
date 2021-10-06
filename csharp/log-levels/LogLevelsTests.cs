@@ -10,7 +10,6 @@ public class LogLineTests
         Assert.Equal("Stack overflow", LogLine.Message("[ERROR]: Stack overflow"));
     }
     
-    [Fact(Skip = "Remove this Skip property to run this test")]
     [Task(1)]
     public void Warning_message()
     {
