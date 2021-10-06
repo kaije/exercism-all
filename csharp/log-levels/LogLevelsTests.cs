@@ -10,20 +10,21 @@ public class LogLineTests
         Assert.Equal("Stack overflow", LogLine.Message("[ERROR]: Stack overflow"));
     }
     
+    [Fact]
     [Task(1)]
     public void Warning_message()
     {
         Assert.Equal("Disk almost full", LogLine.Message("[WARNING]: Disk almost full"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(1)]
     public void Info_message()
     {
         Assert.Equal("File moved", LogLine.Message("[INFO]: File moved"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(1)]
     public void Message_with_leading_and_trailing_white_space()
     {
