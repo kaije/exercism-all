@@ -38,21 +38,21 @@ public class LogLineTests
         Assert.Equal("error", LogLine.LogLevel("[ERROR]: Disk full"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Warning_log_level()
     {
         Assert.Equal("warning", LogLine.LogLevel("[WARNING]: Unsafe password"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Info_log_level()
     {
         Assert.Equal("info", LogLine.LogLevel("[INFO]: Timezone changed"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Error_reformat()
     {
