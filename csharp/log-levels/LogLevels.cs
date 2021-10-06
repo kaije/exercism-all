@@ -9,5 +9,4 @@ static class LogLine
         logLine.Substring(logLine.IndexOf('[') + 1,logLine.IndexOf(']') - 1).ToLower();
 
     public static string Reformat(string logLine) => $"{Message(logLine)} ({LogLevel(logLine)})";
-
 }

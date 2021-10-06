@@ -59,21 +59,21 @@ public class LogLineTests
         Assert.Equal("Segmentation fault (error)", LogLine.Reformat("[ERROR]: Segmentation fault"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Warning_reformat()
     {
         Assert.Equal("Decreased performance (warning)", LogLine.Reformat("[WARNING]: Decreased performance"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Info_reformat()
     {
         Assert.Equal("Disk defragmented (info)", LogLine.Reformat("[INFO]: Disk defragmented"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(3)]
     public void Reformat_with_leading_and_trailing_white_space()
     {
