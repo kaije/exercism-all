@@ -31,7 +31,7 @@ public class LogLineTests
         Assert.Equal("Timezone not set", LogLine.Message("[WARNING]:   \tTimezone not set  \r\n"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     [Task(2)]
     public void Error_log_level()
     {

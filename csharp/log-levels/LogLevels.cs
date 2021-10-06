@@ -4,10 +4,7 @@ static class LogLine
 {
     public static string Message(string logLine) => logLine.Substring(logLine.IndexOf(']') + 3).Trim();
 
-    public static string LogLevel(string logLine)
-    {
-        throw new NotImplementedException("Please implement the (static) LogLine.LogLevel() method");
-    }
+    public static string LogLevel(string logLine) => logLine.Substring(logLine.IndexOf('[') + 1,logLine.IndexOf(']') - 1).ToLower();
 
     public static string Reformat(string logLine)
     {
