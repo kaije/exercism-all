@@ -6,7 +6,11 @@ public static class LogAnalysis
         return str.Split(delimeter)[1];
     }
 
-    public static string SubstringBetween(this string str, string firstDelimeter, string secondDelimeter) => "not implemented";
+    public static string SubstringBetween(this string str, string firstDelimeter, string secondDelimeter) {
+        int first = str.IndexOf('[') + 1;
+        int last = str.IndexOf(']');
+        return str.Substring(first, last - first);
+    }
     
     public static string Message(this string str) => "not implemented";
 
