@@ -10,19 +10,19 @@ public class LogAnalysisTests
         Assert.Equal(" am the 1st test", "I am the 1st test".SubstringAfter("I"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void SubstringAfter_WithDelimeterOfLengthLongerThan1()
     {
         Assert.Equal(" test", "I am the 2nd test".SubstringAfter("2nd"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void SubstringBetween()
     {
         Assert.Equal("INFO", "[INFO]: File Deleted.".SubstringBetween("[", "]"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Message()
     {
         var log = "[WARNING]: Library is deprecated.";

@@ -12,7 +12,7 @@ public static class LogAnalysis
         return str.Substring(first, last - first);
     }
     
-    public static string Message(this string str) => "not implemented";
+    public static string Message(this string str) => str.SubstringAfter(":").Trim();
 
     public static string LogLevel(this string str) => "not implemented";
 }
