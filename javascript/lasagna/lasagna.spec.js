@@ -12,8 +12,8 @@ describe('EXPECTED_MINUTES_IN_OVEN', () => {
   });
 });
 
-describe.skip('remainingMinutesInOven', () => {
-  test('calculates the remaining time', () => {s
+describe('remainingMinutesInOven', () => {
+  test('calculates the remaining time', () => {
     expect(remainingMinutesInOven(25)).toBe(15);
     expect(remainingMinutesInOven(5)).toBe(35);
     expect(remainingMinutesInOven(39)).toBe(1);
