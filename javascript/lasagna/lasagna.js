@@ -52,7 +52,7 @@ export const remainingMinutesInOven = (actualMinutesInOven) =>
  * @param {number} numberOfLayers
  * @returns {number} the total preparation time
  */
-export const preparationTimeInMinutes = (numberOfLayers) => 2 * numberOfLayers;
+export const preparationTimeInMinutes = (numberOfLayers) => PREPARATION_MINUTES_PER_LAYER * numberOfLayers;
 
 /**
  * Calculates the total working time. That is, the time to prepare all the layers
