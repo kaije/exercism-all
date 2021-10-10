@@ -135,7 +135,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe.skip('can free prisoner', () => {
+  describe('can free prisoner', () => {
     test('when everyone is asleep and pet dog is not present', () => {
       const knightIsAwake = false;
       const archerIsAwake = false;

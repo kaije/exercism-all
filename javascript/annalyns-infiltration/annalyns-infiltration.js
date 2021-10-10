@@ -41,11 +41,10 @@ export const canSignalPrisoner = (archerIsAwake, prisonerIsAwake) =>
  *
  * @returns {boolean} Whether or not you can free Annalyn's friend.
  */
-export function canFreePrisoner(
+export const canFreePrisoner = (
   knightIsAwake,
   archerIsAwake,
   prisonerIsAwake,
   petDogIsPresent
-) {
-  throw new Error('Implement the canFreePrisoner function');
-}
+) => 
+  (petDogIsPresent && !archerIsAwake) || (prisonerIsAwake && !knightIsAwake && !archerIsAwake);
