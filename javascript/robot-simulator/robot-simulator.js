@@ -1,107 +1,29 @@
-class Robot {
-  constructor() {
-    this.directions = ["east", "west", "north", "south"];
-    this.bearing = null;
-    this.coordinates = [0, 0];
-  }
-  place(config) {
-    var { x, y, direction } = config;
-    this.orient(direction);
-    this.at(x, y);
-  }
-  evaluate(instructions) {
-    let actions = Robot.instructions(instructions);
-    actions.forEach(action => this.doAction(action));
-  }
-  doAction(action) {
-    switch (action) {
-      case "turnLeft":
-        this.turnLeft();
-        break;
-      case "turnRight":
-        this.turnRight();
-        break;
-      case "advance":
-        this.advance();
-        break;
-      default:
-        null;
-    }
-  }
-  at(x, y) {
-    this.coordinates = [x, y];
-  }
-  orient(currentDirection) {
-    if (!this.directions.includes(currentDirection)) {
-      throw new InvalidInputError();
-    } else {
-      this.bearing = currentDirection;
-    }
-  }
-  turnRight() {
-    switch (this.bearing) {
-      case "north":
-        this.orient("east");
-        break;
-      case "east":
-        this.orient("south");
-        break;
-      case "south":
-        this.orient("west");
-        break;
-      case "west":
-        this.orient("north");
-        break;
-      default:
-        null;
-    }
-  }
-  turnLeft() {
-    switch (this.bearing) {
-      case "north":
-        this.orient("west");
-        break;
-      case "west":
-        this.orient("south");
-        break;
-      case "south":
-        this.orient("east");
-        break;
-      case "east":
-        this.orient("north");
-        break;
-      default:
-        null;
-    }
-  }
-  advance() {
-    switch (this.bearing) {
-      case "north":
-        this.coordinates[1]++;
-        break;
-      case "east":
-        this.coordinates[0]++;
-        break;
-      case "south":
-        this.coordinates[1]--;
-        break;
-      case "west":
-        this.coordinates[0]--;
-        break;
-      default:
-        null;
-    }
-  }
-  static instructions(instructions) {
-    let translations = {
-      L: "turnLeft",
-      R: "turnRight",
-      A: "advance"
-    };
-    return instructions.split("").map(instruction => translations[instruction]);
+//
+// This is only a SKELETON file for the 'Robot Simulator' exercise. It's been provided as a
+// convenience to get you started writing code faster.
+//
+
+export class InvalidInputError extends Error {
+  constructor(message) {
+    super();
+    this.message = message || 'Invalid Input';
   }
 }
 
-class InvalidInputError extends Error {}
+export class Robot {
+  get bearing() {
+    throw new Error('Remove this statement and implement this function');
+  }
 
-export { Robot, InvalidInputError };
+  get coordinates() {
+    throw new Error('Remove this statement and implement this function');
+  }
+
+  place({ x, y, direction }) {
+    throw new Error('Remove this statement and implement this function');
+  }
+
+  evaluate(instructions) {
+    throw new Error('Remove this statement and implement this function');
+  }
+}
