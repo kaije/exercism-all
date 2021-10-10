@@ -28,9 +28,8 @@ export const canSpy = (knightIsAwake, archerIsAwake, prisonerIsAwake) =>
  *
  * @returns {boolean} Whether or not you can send a signal to the prisoner.
  */
-export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
-  throw new Error('Implement the canSignalPrisoner function');
-}
+export const canSignalPrisoner = (archerIsAwake, prisonerIsAwake) =>
+  prisonerIsAwake && !archerIsAwake;
 
 /**
  * The final stage in the plan: freeing Annalyn's best friend.

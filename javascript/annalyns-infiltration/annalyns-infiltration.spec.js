@@ -101,7 +101,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe.skip('can signal prisoner', () => {
+  describe('can signal prisoner', () => {
     test('when everyone is asleep', () => {
       const archerIsAwake = false;
       const prisonerIsAwake = false;
