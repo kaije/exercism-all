@@ -9,13 +9,9 @@ export class Triangle {
   }
   
   isTriangle() {
-    const [a, b, c] = this.sides;
-    return (
-      a > 0 && b > 0 && c > 0 &&
-      a + b >= c &&
-      b + c >= a &&
-      c + a >= b
-    );
+    return this.sides
+      .sort((a,b) => a - b)
+      .every(side => side > 0) && this.sides[2] <= this.sides[0] + this.sides[1];
   }
 
   isEquilateral() {
