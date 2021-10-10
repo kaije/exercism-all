@@ -22,7 +22,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe.skip('can spy', () => {
+  describe('can spy', () => {
     test('when everyone is asleep', () => {
       const knightIsAwake = false;
       const archerIsAwake = false;

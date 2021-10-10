@@ -17,9 +17,8 @@ export const canExecuteFastAttack = (knightIsAwake) =>
  *
  * @returns {boolean} Whether or not you can spy on someone.
  */
-export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-  throw new Error('Implement the canSpy function');
-}
+export const canSpy = (knightIsAwake, archerIsAwake, prisonerIsAwake) =>
+  knightIsAwake || archerIsAwake || prisonerIsAwake;
 
 /**
  * You'll get caught by the archer if you signal while they're awake.
