@@ -25,7 +25,7 @@ describe('remainingMinutesInOven', () => {
   });
 });
 
-describe.skip('preparationTimeInMinutes', () => {
+describe('preparationTimeInMinutes', () => {
   test('calculates the preparation time', () => {
     expect(preparationTimeInMinutes(1)).toBe(2);
     expect(preparationTimeInMinutes(2)).toBe(4);
