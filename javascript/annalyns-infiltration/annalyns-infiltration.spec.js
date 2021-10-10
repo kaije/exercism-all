@@ -22,7 +22,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe('can spy', () => {
+  describe.skip('can spy', () => {
     test('when everyone is asleep', () => {
       const knightIsAwake = false;
       const archerIsAwake = false;
@@ -101,7 +101,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe('can signal prisoner', () => {
+  describe.skip('can signal prisoner', () => {
     test('when everyone is asleep', () => {
       const archerIsAwake = false;
       const prisonerIsAwake = false;
@@ -135,7 +135,7 @@ describe("Annalyn's infiltration", () => {
     });
   });
 
-  describe('can free prisoner', () => {
+  describe.skip('can free prisoner', () => {
     test('when everyone is asleep and pet dog is not present', () => {
       const knightIsAwake = false;
       const archerIsAwake = false;
