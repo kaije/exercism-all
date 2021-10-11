@@ -1,15 +1,7 @@
 export const dayRate = (ratePerHour) => 8 * ratePerHour;
 
-/**
- * Calculates the rate per month
- *
- * @param {number} ratePerHour
- * @param {number} discount for example 20% written as 0.2
- * @returns {number} the rounded up monthly rate
- */
-export function monthRate(ratePerHour, discount) {
-  throw new Error('Implement the monthRate function');
-}
+export const monthRate = (ratePerHour, discount) => 
+  Math.ceil(22 * dayRate(ratePerHour) * (1 - discount));
 
 /**
  * Calculates the number of days in a budget, rounded down
