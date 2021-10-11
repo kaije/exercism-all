@@ -74,7 +74,7 @@ describe('freelancer rates', () => {
     });
   });
 
-  describe.skip('days in budget', () => {
+  describe('days in budget', () => {
     describe('with a budget of 1280', () => {
       test('at 16/hour', () => {
         const actual = daysInBudget(1280, 16, 0);
