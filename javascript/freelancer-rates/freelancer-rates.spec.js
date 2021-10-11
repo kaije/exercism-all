@@ -32,7 +32,7 @@ describe('freelancer rates', () => {
     });
   });
 
-  describe('month rate', () => {
+  describe.skip('month rate', () => {
     test('at 16/hour', () => {
       const actual = monthRate(16, 0);
       expect(actual).toBe(2816);
@@ -74,7 +74,7 @@ describe('freelancer rates', () => {
     });
   });
 
-  describe('days in budget', () => {
+  describe.skip('days in budget', () => {
     describe('with a budget of 1280', () => {
       test('at 16/hour', () => {
         const actual = daysInBudget(1280, 16, 0);
