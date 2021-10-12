@@ -56,7 +56,7 @@ describe('front door response', () => {
   });
 });
 
-describe.skip('front door password', () => {
+describe('front door password', () => {
   test('should capitalize SUMMER', () => {
     expect(frontDoorPassword('SUMMER')).toBe('Summer');
   });

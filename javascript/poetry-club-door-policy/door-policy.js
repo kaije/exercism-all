@@ -13,9 +13,7 @@ export const frontDoorResponse = (line) => line.charAt(0);
  * @param {string} word the letters you responded with before
  * @returns {string} the front door password
  */
-export function frontDoorPassword(word) {
-  throw new Error('Implement the frontDoorPassword function');
-}
+export const frontDoorPassword = (word) => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`;
 
 /**
  * Respond with the correct character, given the line of the
