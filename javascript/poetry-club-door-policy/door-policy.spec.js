@@ -102,7 +102,7 @@ describe('back door response', () => {
   });
 });
 
-describe.skip('back door password', () => {
+describe('back door password', () => {
   test("should generate the correct pass phrase from 'work'", () => {
     expect(backDoorPassword('work')).toBe('Work, please');
   });
