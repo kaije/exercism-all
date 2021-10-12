@@ -56,7 +56,7 @@ describe('front door response', () => {
   });
 });
 
-describe('front door password', () => {
+describe.skip('front door password', () => {
   test('should capitalize SUMMER', () => {
     expect(frontDoorPassword('SUMMER')).toBe('Summer');
   });
@@ -70,7 +70,7 @@ describe('front door password', () => {
   });
 });
 
-describe('back door response', () => {
+describe.skip('back door response', () => {
   test('should take the last letter character of each line of CODE_WORK', () => {
     // Code Work, by Derk-Jan Karrenbeld
     const CODE_WORK = [
@@ -102,7 +102,7 @@ describe('back door response', () => {
   });
 });
 
-describe('back door password', () => {
+describe.skip('back door password', () => {
   test("should generate the correct pass phrase from 'work'", () => {
     expect(backDoorPassword('work')).toBe('Work, please');
   });
