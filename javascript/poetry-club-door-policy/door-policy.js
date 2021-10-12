@@ -22,9 +22,7 @@ export const frontDoorPassword = (word) => `${word.charAt(0).toUpperCase()}${wor
  * @param {string} line
  * @returns {string}
  */
-export function backDoorResponse(line) {
-  throw new Error('Implement the backDoorResponse function');
-}
+export const backDoorResponse = (line) => line.charAt(line.trim().length - 1);
 
 /**
  * Format the password for the front-door, given the response

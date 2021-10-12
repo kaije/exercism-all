@@ -70,7 +70,7 @@ describe('front door password', () => {
   });
 });
 
-describe.skip('back door response', () => {
+describe('back door response', () => {
   test('should take the last letter character of each line of CODE_WORK', () => {
     // Code Work, by Derk-Jan Karrenbeld
     const CODE_WORK = [
